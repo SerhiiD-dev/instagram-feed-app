@@ -35,9 +35,9 @@ model Feed {
   id String @id
   name String
   heading String
-  subheading
+  subheading String
   status Boolean @default(true)
-
+  updated DateTime @default(now())
 }
 
 model Settings {

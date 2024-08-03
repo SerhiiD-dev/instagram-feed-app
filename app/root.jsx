@@ -21,7 +21,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        hi, Ihor
         <Outlet />
         <ScrollRestoration />
         <Scripts />
