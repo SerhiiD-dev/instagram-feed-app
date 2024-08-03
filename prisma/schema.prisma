@@ -30,3 +30,25 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model Feed {
+  id String @id
+  name String
+  heading String
+  subheading
+  status Boolean @default(true)
+
+}
+
+model Settings {
+  id String @id
+  feedId String
+  headingSize Int
+  headingWeight Int
+  subheadingSize Int
+  subheadingWeight Int
+  postClick Int
+  columns Int
+  postSpacing Int
+  customCss String
+}
