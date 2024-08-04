@@ -1,0 +1,52 @@
+{% assign avg_rating = block.settings.product.metafields.demo.avg_rating.value | round %}
+<span style="color:{{ block.settings.colour }}">
+  {% render 'stars', rating: avg_rating %}
+</span>
+{% if avg_rating >= 4 %}
+  <br>
+  <img src="{{ "thumbs-up.png" | asset_img_url: '15x' }}" height="15" width="15" loading="lazy">
+  {{ 'ratings.home.recommendationText' | t }}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Instagram Feed",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "number",
+      "id": "title_size",
+      "label": "Title size (px)",
+      "default": 20
+    },
+    {
+      "type": "number",
+      "id": "title_weight",
+      "label": "Title weight",
+      "default": 400
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "number",
+      "id": "subtitle_size",
+      "label": "Title size (px)",
+      "default": 20
+    },
+    {
+      "type": "number",
+      "id": "subtitle_weight",
+      "label": "Title weight",
+      "default": 400
+    }
+  ]
+}
+{% endschema %}

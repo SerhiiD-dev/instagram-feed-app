@@ -74,6 +74,11 @@ export default function ManageFeed() {
       </TitleBar>
       <Layout>
         <Layout.Section>
+          <Card>
+            test
+          </Card>
+        </Layout.Section>
+        <Layout.Section>
           <IndexTable
             resourceName={resourceName}
             itemCount={feeds.length}
