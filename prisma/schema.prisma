@@ -38,10 +38,13 @@ model Feed {
   subheading String
   status Boolean @default(true)
   updated DateTime @default(now())
+  shopId String
+  settings Settings @relation(fields: [settingsId], references: [id])
+  settingsId Int @unique
 }
 
 model Settings {
-  id String @id
+  id Int @id @default(autoincrement())
   feedId String
   headingSize Int
   headingWeight Int
@@ -51,4 +54,5 @@ model Settings {
   columns Int
   postSpacing Int
   customCss String
+  feed Feed?
 }
