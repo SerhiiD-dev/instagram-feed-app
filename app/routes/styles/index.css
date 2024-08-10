@@ -1,0 +1,24 @@
+.instagram-login-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instagram-login-wrapper-title {
+    font-weight: bold;
+    padding-block: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.instagram-login-wrapper-left p {
+    padding-block: 10px;
+}
+
+.contact-us-title {
+    font-weight: bold;
+    padding-block: 5px;
+}
+
+.contact-us-description {
+    padding-bottom: 5px;
+}

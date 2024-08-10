@@ -1,5 +1,6 @@
 import { Page, Layout, Card, Button } from '@shopify/polaris';
 import React from 'react';
+import '../styles/index.css'
 
 
 export const InstagramLoginLayout = () => {
@@ -7,14 +8,14 @@ export const InstagramLoginLayout = () => {
         <Page fullWidth>
             <Layout>
                 <Layout.Section>
-                    <Card title="Online store dashboard">
+                    <Card>
+                        <p className="instagram-login-wrapper-title">
+                            Connect Instagram account to get started
+                        </p>
                         <div className="instagram-login-wrapper">
                             <div className="instagram-login-wrapper-left">
-                                <p>
-                                    Connect Instagram account to get started
-                                </p>
                                 <p>Start the first step to create feed by connecting your instagram account</p>
-                                <Button>Add account </Button>
+                                <Button variant="primary">Add account </Button>
                             </div>
                             <div className="instagram-login-wrapper-right">
                                 <img src="./instagram80x80.svg" />
