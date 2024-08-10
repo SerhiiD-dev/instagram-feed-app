@@ -1,10 +1,11 @@
 import { json } from "@remix-run/node";
-import { Link, Outlet, useLoaderData, useRouteError } from "@remix-run/react";
+import { Link, useLoaderData, useRouteError } from "@remix-run/react";
 import { boundary } from "@shopify/shopify-app-remix/server";
 import { AppProvider } from "@shopify/shopify-app-remix/react";
 import { NavMenu } from "@shopify/app-bridge-react";
 import polarisStyles from "@shopify/polaris/build/esm/styles.css?url";
 import { authenticate } from "../shopify.server";
+import { MainPageNotificationLayout, TopHeadingLayout, InstagramLoginLayout, ContactUsLayout } from "./components";
 
 export const links = () => [{ rel: "stylesheet", href: polarisStyles }];
 
@@ -26,7 +27,10 @@ export default function App() {
         <Link to="/app/additional">Additional page</Link>
         <Link to="/app/manage">Manage Feeds</Link>
       </NavMenu>
-      <Outlet />
+      <TopHeadingLayout />
+      <MainPageNotificationLayout />
+      <InstagramLoginLayout />
+      <ContactUsLayout />
     </AppProvider>
   );
 }

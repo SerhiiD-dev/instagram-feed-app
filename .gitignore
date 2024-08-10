@@ -9,6 +9,7 @@ node_modules
 /prisma/dev.sqlite
 /prisma/dev.sqlite-journal
 database.sqlite
+shopify.app.toml
 
 .env
 .env.*
@@ -17,3 +18,4 @@ database.sqlite
 
 
 /extensions/*/dist
+shopify.app.toml
