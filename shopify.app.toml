@@ -3,7 +3,7 @@
 client_id = "ed1ba7183121c17f04beb1b57cda95e0"
 name = "instagram-feed-app"
 handle = "instagram-feed-app-5"
-application_url = "https://jones-governments-f-following.trycloudflare.com"
+application_url = "https://ghost-deaf-slightly-wholesale.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://jones-governments-f-following.trycloudflare.com/auth/callback",
-  "https://jones-governments-f-following.trycloudflare.com/auth/shopify/callback",
-  "https://jones-governments-f-following.trycloudflare.com/api/auth/callback"
+  "https://ghost-deaf-slightly-wholesale.trycloudflare.com/auth/callback",
+  "https://ghost-deaf-slightly-wholesale.trycloudflare.com/auth/shopify/callback",
+  "https://ghost-deaf-slightly-wholesale.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
